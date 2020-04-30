@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cgd-ew-yIp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pulse Animation Controller-->
+        <scene sceneID="6sQ-6q-bFD">
+            <objects>
+                <viewController id="Cgd-ew-yIp" customClass="PulseAnimationController" customModule="PulseAnimation" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6JB-4y-w6N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bc-xW-OLC">
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.6148123741" green="0.1017967239" blue="0.1002308354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="DDm-qw-Rag"/>
+                                    <constraint firstAttribute="height" constant="30" id="Dp7-LP-vzz"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="onClickBtn:" destination="Cgd-ew-yIp" eventType="touchUpInside" id="gLN-Bf-IPE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2bc-xW-OLC" firstAttribute="centerX" secondItem="6JB-4y-w6N" secondAttribute="centerX" id="Boa-gC-UfA"/>
+                            <constraint firstItem="2bc-xW-OLC" firstAttribute="centerY" secondItem="6JB-4y-w6N" secondAttribute="centerY" id="Klv-1h-q76"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g4C-gZ-1Hf"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="2bc-xW-OLC" id="8Zs-gp-I7U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ma-XH-3QU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-128" y="9"/>
+        </scene>
+    </scenes>
+</document>

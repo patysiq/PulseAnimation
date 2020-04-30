@@ -3,27 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7B24FC07245B6C320036881A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B24FC06245B6C320036881A /* AppDelegate.swift */; };
 		7B24FC09245B6C320036881A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B24FC08245B6C320036881A /* SceneDelegate.swift */; };
-		7B24FC0B245B6C320036881A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B24FC0A245B6C320036881A /* ViewController.swift */; };
-		7B24FC0E245B6C320036881A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B24FC0C245B6C320036881A /* Main.storyboard */; };
 		7B24FC10245B6C360036881A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B24FC0F245B6C360036881A /* Assets.xcassets */; };
 		7B24FC13245B6C360036881A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B24FC11245B6C360036881A /* LaunchScreen.storyboard */; };
+		7B24FC1E245B6D500036881A /* PulseAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B24FC1D245B6D500036881A /* PulseAnimation.storyboard */; };
+		7B24FC20245B6D8B0036881A /* PulseAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B24FC1F245B6D8B0036881A /* PulseAnimationController.swift */; };
+		7B24FC22245B73070036881A /* PulseAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B24FC21245B73070036881A /* PulseAnimationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B24FC03245B6C320036881A /* PulseAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B24FC06245B6C320036881A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B24FC08245B6C320036881A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B24FC0A245B6C320036881A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B24FC0D245B6C320036881A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B24FC0F245B6C360036881A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B24FC12245B6C360036881A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B24FC14245B6C360036881A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B24FC1D245B6D500036881A /* PulseAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PulseAnimation.storyboard; sourceTree = "<group>"; };
+		7B24FC1F245B6D8B0036881A /* PulseAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimationController.swift; sourceTree = "<group>"; };
+		7B24FC21245B73070036881A /* PulseAnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				7B24FC06245B6C320036881A /* AppDelegate.swift */,
 				7B24FC08245B6C320036881A /* SceneDelegate.swift */,
-				7B24FC0A245B6C320036881A /* ViewController.swift */,
-				7B24FC0C245B6C320036881A /* Main.storyboard */,
-				7B24FC0F245B6C360036881A /* Assets.xcassets */,
-				7B24FC11245B6C360036881A /* LaunchScreen.storyboard */,
+				7B24FC23245B73110036881A /* Model */,
+				7B24FC1C245B6D120036881A /* Controler */,
+				7B24FC1B245B6CE60036881A /* View */,
 				7B24FC14245B6C360036881A /* Info.plist */,
 			);
 			path = PulseAnimation;
+			sourceTree = "<group>";
+		};
+		7B24FC1B245B6CE60036881A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B24FC11245B6C360036881A /* LaunchScreen.storyboard */,
+				7B24FC0F245B6C360036881A /* Assets.xcassets */,
+				7B24FC1D245B6D500036881A /* PulseAnimation.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B24FC1C245B6D120036881A /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				7B24FC1F245B6D8B0036881A /* PulseAnimationController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		7B24FC23245B73110036881A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B24FC21245B73070036881A /* PulseAnimationModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = 7B24FBFE245B6C310036881A /* Build configuration list for PBXProject "PulseAnimation" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -127,7 +154,7 @@
 			files = (
 				7B24FC13245B6C360036881A /* LaunchScreen.storyboard in Resources */,
 				7B24FC10245B6C360036881A /* Assets.xcassets in Resources */,
-				7B24FC0E245B6C320036881A /* Main.storyboard in Resources */,
+				7B24FC1E245B6D500036881A /* PulseAnimation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B24FC0B245B6C320036881A /* ViewController.swift in Sources */,
 				7B24FC07245B6C320036881A /* AppDelegate.swift in Sources */,
+				7B24FC20245B6D8B0036881A /* PulseAnimationController.swift in Sources */,
+				7B24FC22245B73070036881A /* PulseAnimationModel.swift in Sources */,
 				7B24FC09245B6C320036881A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +175,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7B24FC0C245B6C320036881A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B24FC0D245B6C320036881A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7B24FC11245B6C360036881A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 937MK3AF6X;
 				INFOPLIST_FILE = PulseAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 937MK3AF6X;
 				INFOPLIST_FILE = PulseAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
