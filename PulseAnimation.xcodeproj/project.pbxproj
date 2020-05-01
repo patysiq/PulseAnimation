@@ -12,8 +12,8 @@
 		7B24FC10245B6C360036881A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B24FC0F245B6C360036881A /* Assets.xcassets */; };
 		7B24FC13245B6C360036881A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B24FC11245B6C360036881A /* LaunchScreen.storyboard */; };
 		7B24FC1E245B6D500036881A /* PulseAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B24FC1D245B6D500036881A /* PulseAnimation.storyboard */; };
-		7B24FC20245B6D8B0036881A /* PulseAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B24FC1F245B6D8B0036881A /* PulseAnimationController.swift */; };
 		7B24FC22245B73070036881A /* PulseAnimationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B24FC21245B73070036881A /* PulseAnimationModel.swift */; };
+		7BDC8550245C8CC500D553A4 /* PulseAnimacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDC854F245C8CC500D553A4 /* PulseAnimacionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		7B24FC12245B6C360036881A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B24FC14245B6C360036881A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B24FC1D245B6D500036881A /* PulseAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PulseAnimation.storyboard; sourceTree = "<group>"; };
-		7B24FC1F245B6D8B0036881A /* PulseAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimationController.swift; sourceTree = "<group>"; };
 		7B24FC21245B73070036881A /* PulseAnimationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimationModel.swift; sourceTree = "<group>"; };
+		7BDC854F245C8CC500D553A4 /* PulseAnimacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PulseAnimacionController.swift; path = PulseAnimation/Controller/PulseAnimacionController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			children = (
 				7B24FC06245B6C320036881A /* AppDelegate.swift */,
 				7B24FC08245B6C320036881A /* SceneDelegate.swift */,
+				7BDC8551245C8CCD00D553A4 /* Controller */,
 				7B24FC23245B73110036881A /* Model */,
-				7B24FC1C245B6D120036881A /* Controler */,
 				7B24FC1B245B6CE60036881A /* View */,
 				7B24FC14245B6C360036881A /* Info.plist */,
 			);
@@ -78,20 +78,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7B24FC1C245B6D120036881A /* Controler */ = {
-			isa = PBXGroup;
-			children = (
-				7B24FC1F245B6D8B0036881A /* PulseAnimationController.swift */,
-			);
-			path = Controler;
-			sourceTree = "<group>";
-		};
 		7B24FC23245B73110036881A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				7B24FC21245B73070036881A /* PulseAnimationModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7BDC8551245C8CCD00D553A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BDC854F245C8CC500D553A4 /* PulseAnimacionController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B24FC07245B6C320036881A /* AppDelegate.swift in Sources */,
-				7B24FC20245B6D8B0036881A /* PulseAnimationController.swift in Sources */,
+				7BDC8550245C8CC500D553A4 /* PulseAnimacionController.swift in Sources */,
 				7B24FC22245B73070036881A /* PulseAnimationModel.swift in Sources */,
 				7B24FC09245B6C320036881A /* SceneDelegate.swift in Sources */,
 			);
